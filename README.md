@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center">
   <p align="center">
     <a href="https://justdjango.com/?utm_source=github&utm_medium=logo" target="_blank">
@@ -97,3 +98,7 @@ If you're learning Django and want to take your next step to become a profession
 <a href="https://www.twitter.com/justdjangocode" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231877F2.svg?&style=flat-square&logo=twitter&logoColor=white" alt="Twitter"></a>
 
 </div>
+=======
+# django-ecommerce
+This is a part of CC Project
+>>>>>>> 81fbbdba95c71cd247b381e09a4ede5ab9ba3e83
