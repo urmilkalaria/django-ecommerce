@@ -5,17 +5,6 @@ pipeline{
         }
     }
     stages{
-        stage('Clone repository') {
-            steps{
-                git branch 'main'
-                url 'https://github.com/urmilkalaria/django-ecommerce.git'
-            }
-        }
-        stage('Install Dependencies'){
-            steps{
-                sh 'pip install -r requirements.txt'
-            }
-        }
         stage('Build Docker Image'){
             steps{
                 sh 'sudo docker build . -t django-ecommerce'
@@ -34,6 +23,11 @@ pipeline{
                 sh 'sudo docker run -d -p 8000:8000 urmilkalaria/cc_project'
                 sh 'sudo docker ps'
             }
+        }
+    }
+    post {
+        always {
+            sh 'echo "Pipeline Finished."'
         }
     }
 }
