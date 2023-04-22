@@ -1,14 +1,14 @@
 pipeline{
     agent{
-        docker{
+        docker {
             image 'urmilkalaria/cc_project:latest'
         }
     }
     stages{
         stage('Clone repository') {
             steps{
-                git branch: 'main'
-                url: 'https://github.com/urmilkalaria/django-ecommerce.git'
+                git branch 'main'
+                url 'https://github.com/urmilkalaria/django-ecommerce.git'
             }
         }
         stage('Install Dependencies'){
