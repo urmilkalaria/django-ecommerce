@@ -25,9 +25,4 @@ pipeline{
             }
         }
     }
-    post {
-        always {
-            sh 'echo "Pipeline Finished."'
-        }
-    }
 }
