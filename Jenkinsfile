@@ -2,6 +2,7 @@ pipeline{
     agent{
         docker {
             image 'urmilkalaria/cc_project:latest'
+            args '-u urmilkalaria -p patel17042002'
         }
     }
     stages{
