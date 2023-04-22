@@ -5,10 +5,6 @@ pipeline{
         }
     }
     stages{
-        stage('Initialize'){
-            dockerHome = tool 'Docker'
-            env.PATH = "${dockerHome}/bin:${env.PATH}"
-        }
         stage('Build Docker Image'){
             steps{
                 sh 'docker build . -t django-ecommerce'
